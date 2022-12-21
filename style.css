@@ -1,0 +1,515 @@
+/* Global styles */
+body {
+  background: #3F5041;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+h1 {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #E2FBE6;
+} 
+
+i {
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #E2FBE6;
+}
+
+h3 {
+  /* aka subhead */
+font-family: 'Unbounded';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: #E2FBE6;
+}
+
+a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #E2FBE6;
+}
+
+a:hover {
+  color: #c9f7d1;
+  
+}
+
+label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #E2FBE6;
+}
+
+hr {
+  border-top: 16px solid #E3E3E3;
+}
+
+p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #E3E3E3;
+}
+
+.p2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #E3E3E3;
+}
+
+li {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #E3E3E3;
+}
+
+img {
+  max-width: 600px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0px;
+  padding-bottom: 80px;
+}
+
+nav::after {
+  content: none !important;
+}
+nav::before {
+  content: none !important;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 8px;
+}
+
+
+
+#submit {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  background: #E2FBE6;
+  border-radius: 100px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #3F5041;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Containers */
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+  padding-bottom: 80px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 64px;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.recipe-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  padding-bottom: 80px;
+}
+
+.recipe-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  background: #E2FBE6;
+  border-radius: 100px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #3F5041;
+  text-align: center;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  background: #ffffff;
+  border-radius: 100px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #3F5041;
+  text-align: center;
+  text-decoration: none;
+  transition: 500ms ease-in-out;
+}
+
+.recipe-procedure {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px;
+  padding-bottom: 80px;
+  grid-auto-flow: row;
+  grid-template-areas:
+   ". .";
+  }
+  
+.nav-mobile {
+  display: none;
+}
+
+#dyanmic-recipe-1 {
+  display: block;
+}
+
+#dynamic-recipe-2 {
+  display: none;
+
+}
+
+#dynamic-recipe-3 {
+  display: none;
+
+}
+
+
+  /* Tablet styles max width 834px */
+
+  @media screen and (max-width: 1000px) {
+
+  body {
+      background: #3F5041;
+      margin: 0;
+      padding-top: 80px;
+      padding-bottom: 0px;
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    padding-bottom: 80px;
+  }
+  
+  .recipe-row {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 30px 30px; 
+    grid-template-areas: 
+      ". ."
+      ". ."; 
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 8px;
+  }
+
+  img {
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .recipe-procedure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+}
+
+  /* Mobile styles max width 500px */
+
+  @media screen and (max-width: 500px) {
+   
+    .nav {
+      display: none;
+    }
+
+    #hamburger-menu {
+      color: #ffffff;
+      font-size: 24px;
+    }
+
+
+    h1 {
+      font-family: 'Unbounded';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #E2FBE6;
+    }
+
+    body {
+      background: #3F5041;
+      margin: 0;
+      padding-top: 8px;
+      padding-bottom: 0px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 30px;
+      padding-bottom: 24px;
+    }
+
+    .recipe-row {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0px;
+      gap: 48px;
+    }
+
+    .recipe-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 16px;
+    }
+
+    .recipe-img {
+      max-inline-size: 100%;
+      block-size: auto;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      gap: 8px;
+    }
+
+    .nav-mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 24px;
+      padding-top: 24px;
+    }
+
+    .recipe-procedure {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      }
+  }
+
+/* Animation experimentation */
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.recipe-img {
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+img {
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#dyanmic-recipe-1 {
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#dynamic-recipe-2 {
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#dynamic-recipe-3 {
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* hamburger menu experiment */
+
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #3F5041;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  padding: 60px 15px;
+  position: fixed;
+  transition: all .75s linear;
+  transform: translateX(100%);
+  z-index: 10;
+}
+
+#mobile-menu.toggle-open {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+#mobile-menu a, #mobile-menu a:focus, #mobile-menu a:visited {
+  display: block;
+  margin: 25px auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
